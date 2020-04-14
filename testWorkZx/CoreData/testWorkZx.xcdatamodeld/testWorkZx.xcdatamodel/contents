@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AbstractEmployee" representedClassName="AbstractEmployee" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="indexInList" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" attributeType="String"/>
+        <attribute name="salary" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="secondName" attributeType="String"/>
+    </entity>
+    <entity name="Accountant" representedClassName="Accountant" parentEntity="Employee" syncable="YES" codeGenerationType="class">
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountantType" inverseName="accountants" inverseEntity="AccountantType"/>
+    </entity>
+    <entity name="AccountantType" representedClassName="AccountantType" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="accountants" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Accountant" inverseName="type" inverseEntity="Accountant"/>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" parentEntity="AbstractEmployee" syncable="YES" codeGenerationType="class">
+        <attribute name="workplace" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="lunchTime" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TimeInterval" inverseName="lunch" inverseEntity="TimeInterval"/>
+    </entity>
+    <entity name="Lead" representedClassName="Lead" parentEntity="AbstractEmployee" syncable="YES" codeGenerationType="class">
+        <relationship name="meeting" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TimeInterval" inverseName="meeting" inverseEntity="TimeInterval"/>
+    </entity>
+    <entity name="TimeInterval" representedClassName="TimeInterval" syncable="YES" codeGenerationType="class">
+        <attribute name="end" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="start" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="lunch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="lunchTime" inverseEntity="Employee"/>
+        <relationship name="meeting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lead" inverseName="meeting" inverseEntity="Lead"/>
+    </entity>
+    <elements>
+        <element name="AbstractEmployee" positionX="-471.70703125" positionY="-40.28515625" width="128" height="118"/>
+        <element name="Accountant" positionX="-71.91015625" positionY="-25.421875" width="128" height="58"/>
+        <element name="AccountantType" positionX="102.36328125" positionY="186.4453125" width="128" height="73"/>
+        <element name="Employee" positionX="-291.46484375" positionY="-37.7265625" width="128" height="73"/>
+        <element name="Lead" positionX="-293.74609375" positionY="59.0859375" width="128" height="58"/>
+        <element name="TimeInterval" positionX="-113.8046875" positionY="182.25390625" width="128" height="103"/>
+    </elements>
+</model>

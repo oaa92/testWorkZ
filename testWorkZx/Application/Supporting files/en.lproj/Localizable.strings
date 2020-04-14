@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  testWorkZx
+
+  Created by Анатолий on 06/04/2020.
+  Copyright © 2020 Anatoliy Odinetskiy. All rights reserved.
+*/
+
+"list" = "list";
+"gallery" = "gallery";
+"service" = "service";
+"fullName" = "full name";
+"lastName" = "last name";
+"firstName" = "first name";
+"secondName" = "second name";
+"salary" = "salary";
+"consultingHours" = "consulting hours";
+"from" = "from";
+"to" = "to";
+"lunchTime" = "lunch time";
+"workplace" = "workplace";
+"type" = "type";
+"accountingDepartment" = "accounting department";
+"lead" = "lead";
+"employee" = "employee";
+"accountant" = "accountant";
+"payroll" = "payroll";
+"materialAccounting" = "material accounting";
+"position" = "position";
+"requiredFieldsAreNotFilled" = "required fields are not filled";
+"cancel" = "cancel";
+"error" = "error";
+"forward" = "forward";
+"back" = "back";
+"rating" = "rating";

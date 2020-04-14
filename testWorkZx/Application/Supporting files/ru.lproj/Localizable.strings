@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  testWorkZx
+
+  Created by Анатолий on 06/04/2020.
+  Copyright © 2020 Anatoliy Odinetskiy. All rights reserved.
+*/
+
+"list" = "список";
+"gallery" = "галерея";
+"service" = "сервис";
+"fullName" = "фио";
+"lastName" = "фамилия";
+"firstName" = "имя";
+"secondName" = "отчество";
+"salary" = "заработная плата";
+"consultingHours" = "часы приема";
+"from" = "с";
+"to" = "до";
+"lunchTime" = "обеденное время";
+"workplace" = "номер рабочего места";
+"type" = "тип";
+"accountingDepartment" = "бухгалтерия";
+"lead" = "руководитель";
+"employee" = "сотрудник";
+"accountant" = "бухгалтер";
+"payroll" = "начисление зарплаты";
+"materialAccounting" = "учет материалов";
+"position" = "должность";
+"requiredFieldsAreNotFilled" = "обязательные поля не заполнены";
+"cancel" = "отмена";
+"error" = "ошибка";
+"forward" = "вперед";
+"back" = "назад";
+"rating" = "рейтинг";
